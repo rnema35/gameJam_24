@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://debpr8fhavakn"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_mjw63"]
+[ext_resource type="PackedScene" uid="uid://cxwc3470jgh6b" path="res://hud.tscn" id="2_vqx0h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bf066"]
+size = Vector2(40, 39)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_mjw63")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(20, 19.5)
+shape = SubResource("RectangleShape2D_bf066")
+
+[node name="ColorRect" type="ColorRect" parent="CollisionShape2D"]
+offset_left = -20.0
+offset_top = -19.5
+offset_right = 20.0
+offset_bottom = 20.5
+color = Color(0.342129, 0.645027, 0.864614, 1)
+
+[node name="Hud" parent="." instance=ExtResource("2_vqx0h")]
