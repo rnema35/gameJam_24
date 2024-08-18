@@ -50,4 +50,4 @@ curve = SubResource("Curve2D_pua3o")
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_pbu0q")
 animation = &"Fly"
-frame_progress = 0.909022
+frame_progress = 0.727062
