@@ -1,11 +1,34 @@
-[gd_scene load_steps=4 format=3 uid="uid://debpr8fhavakn"]
+[gd_scene load_steps=8 format=3 uid="uid://debpr8fhavakn"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_mjw63"]
+[ext_resource type="Texture2D" uid="uid://bedhymukswygq" path="res://assets/sprites/simpleBird-Sheet.png" id="2_6rpce"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bf066"]
 size = Vector2(40, 38)
 
 [sub_resource type="Curve2D" id="Curve2D_pua3o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j25tj"]
+atlas = ExtResource("2_6rpce")
+region = Rect2(0, 252, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1bur"]
+atlas = ExtResource("2_6rpce")
+region = Rect2(50, 252, 50, 50)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pbu0q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j25tj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f1bur")
+}],
+"loop": true,
+"name": &"Fly",
+"speed": 5.0
+}]
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_mjw63")
@@ -22,3 +45,9 @@ color = Color(0.342129, 0.645027, 0.864614, 1)
 
 [node name="Path2D" type="Path2D" parent="."]
 curve = SubResource("Curve2D_pua3o")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_pbu0q")
+animation = &"Fly"
+frame_progress = 0.909022
