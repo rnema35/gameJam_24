@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dgeyto8ob6pxw"
+path="res://.godot/imported/Call 3.mp3-b9433e6cc148856cae073c27eb3c8437.mp3str"
+
+[deps]
+
+source_file="res://audioclips/Samples/Call 3.mp3"
+dest_files=["res://.godot/imported/Call 3.mp3-b9433e6cc148856cae073c27eb3c8437.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

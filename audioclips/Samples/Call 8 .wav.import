@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cnwa0xygkpvxm"
+path="res://.godot/imported/Call 8 .wav-26392f1f0546c931f7f311203822bf43.sample"
+
+[deps]
+
+source_file="res://audioclips/Samples/Call 8 .wav"
+dest_files=["res://.godot/imported/Call 8 .wav-26392f1f0546c931f7f311203822bf43.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

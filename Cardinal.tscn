@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://cbx2oucxv76ww"]
+
+[ext_resource type="Texture2D" uid="uid://cblxjx7iqsdl0" path="res://assets/sprites/Northern Cardinal.png" id="1_putcf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wv3yf"]
+atlas = ExtResource("1_putcf")
+region = Rect2(2, 0, 32, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xn16r"]
+atlas = ExtResource("1_putcf")
+region = Rect2(34, 0, 32, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wunjy"]
+atlas = ExtResource("1_putcf")
+region = Rect2(66, 0, 32, 36)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ptf4u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wv3yf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xn16r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wunjy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_ptf4u")
+frame_progress = 0.950248
